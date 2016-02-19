@@ -1,0 +1,30 @@
+{
+    "__extends__": "samsung.common",
+    "recovery": {
+        "img": "img/recovery.img"
+    },
+    "__config__": {
+        "target": {
+            "mount": {
+                "cache": {
+                    "mount": "/cache",
+                    "fs": "ext4",
+                    "dev": "/dev/block/mmcblk0p19",
+                    "size": 427819008
+                },
+                "data": {
+                    "mount": "/data",
+                    "fs": "ext4",
+                    "dev": "/dev/block/mmcblk0p21",
+                    "size": 12813598720
+                },
+                "system": {
+                    "mount": "/system",
+                    "fs": "ext4",
+                    "dev": "/dev/block/mmcblk0p20",
+                    "size": 2235564032
+                }
+            }
+        }
+    }
+}
